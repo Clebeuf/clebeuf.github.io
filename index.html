@@ -10,6 +10,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 
+	<link rel="stylesheet" href="CSS/devicon.css">
+
 	<!-- Bootstrap Components -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -30,7 +32,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 
+	<!-- Google maps API -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
+	<!-- D3 scripts for word cloud layout -->
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/d3.layout.cloud.js"></script>
 </head>
 
 <body>
@@ -38,7 +45,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 	   	<ul class="nav nav-pills pull-right">
 			<li role="presentation" class="active"><a href="#">ABOUT</a></li>
-			<li role="presentation"><a href="#">RESUME</a></li>
+			<li role="presentation"><a href="#">SKILLS</a></li>
 			<li role="presentation"><a href="#">PORTFOLIO</a></li>
 			<li role="presentation"><a href="#">CONTACT ME</a></li>
 		</ul>
@@ -54,6 +61,7 @@
 		  	<h3>Hello there, I'm . . .</h3>
 		  	<h1>Carlene Lebeuf</h1>
 		  	<h3>a Computer Science Graduate Student at UVic</h3>
+
 		  </div>
 	  </row>
 	  </div>
@@ -62,29 +70,103 @@
 
 	<div class="container content">
 
-		My name is Carlene, and I am a software developer.
-		Currently, I’m working on my master's degree at a fun research lab called the <a href="http://thechiselgroup.org/" target="_blank">CHISEL Group</a> (Computer-Human Interaction Software Engineering Lab) at the University of Victoria, Canada.
-
+		<div class="row">
+			My name is Carlene, and I am a software developer.
+			Currently, I’m working on my master's degree at a research lab called the 
+			
+			<a href="http://thechiselgroup.org/" target="_blank">CHISEL Group</a> 
+			(Computer-Human Interaction Software Engineering Lab) at the University of Victoria, Canada.
 
 			<br><br>
 
 			I have a passion for human computer interaction, visualization, and interface design.
 
-		<img src="images/HRR.png" class="divider" />
+		</div>
+	</div>
 
-		<h1>RESUME</h1>
+<!-- Skills -->
+	<div class="title-box">
+		.SKILLS
+	</div>
 
-		content goes here
-		<br> link to pdf resume
+	<div class="container content">
+		<div class="row">
+			<div class="col-sm-6">
 
-		<img src="images/HRL.png" class="divider" />
+				<h2>Programming Languages</h2>
 
-		<h1 id="portfolio">PORTFOLIO EXAMPLES</h1>
-		<br>
+				<div class="skillbar clearfix " data-percent="90%">
+					<div class="skillbar-title"><span>Python</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
 
-		<row>
+				<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title"><span>Java</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="50%">
+					<div class="skillbar-title"><span>C</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="50%">
+					<div class="skillbar-title"><span>SQL</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+
+				<h2>Web Development</h2>
+
+				<div class="skillbar clearfix " data-percent="90%">
+					<div class="skillbar-title"><span>HTML</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="85%">
+					<div class="skillbar-title"><span>CSS</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title"><span>Javascript</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="40%">
+					<div class="skillbar-title"><span>jQuery</span></div>
+					<div class="skillbar-bar"></div>
+				</div>
+
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Photoshop</span></div>
+					<div class="skillbar-bar"></div>
+				</div>		
+			</div>
+		</div>
+
+		<div class="row">
+
+		For more information, please see my <a href="http://ca.linkedin.com/in/clebeuf" target="_blank">LinkedIn Profile</a> or download a copy of my Resume. 
+
+		</div>
+
+	</div>
+
+		<!-- <img src="images/HRL.png" class="divider" /> -->
+
+	<div class="title-box">
+		.PORTFOLIO
+	</div>
+
+
+	<div class="container content">
+
+		<div class="row">
 			<div class="col-sm-8">
-				<img src="images/belocal.png" class="portfolio-image">
+				<a href="https://belocalvictoria.me"><img src="images/belocal.png" class="portfolio-image"></a>
 			</div>
 			<div class="col-sm-4 portfolio-text">
 				<h2>beLocal Victoria</h2>
@@ -95,15 +177,18 @@
 
 				<br><br><a href="http://be-local.ca" target="_blank"><b>View Live at:</b> www.be-local.ca </a>
 			</div>
-		</row>
+		</div>
+	</div>
 
 
-		<img src="images/HRR.png" class="divider" />
+	<div class="title-box">
+		.CONTACT
+	</div>
 
-		<h1>CONTACT ME</h1>
 
+	<div class="container">
 
-		<row>
+		<div class="row content">
 			<div class="col-sm-6 col-sm-push-6 contact-me">
 				<a href="mailto:carlylebeuf@gmail.com">
 					<img src="images/email.png" class="social-icon">carlylebeuf(at)gmail
@@ -126,21 +211,16 @@
 
 			</div>
 
-		</row>
-
-
-
+		</div>
 	</div>
+
 
 	<br>
 	<div class="footer">
 		© 2015 Carlene Lebeuf - All rights reserved.
 	<div>
-	<a href="#portfolio">Research &amp; Development </a>
-
 
 	<!-- Stylized map from https://snazzymaps.com -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', init);
         function init() {
@@ -155,6 +235,16 @@
 
     </script>
 
-</body>
 
+	<script>
+
+		jQuery(document).ready(function(){
+			jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},6000);
+			});
+		});
+	</script>
+</body>
 </html>
