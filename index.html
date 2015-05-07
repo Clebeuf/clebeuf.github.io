@@ -1,1 +1,160 @@
-Hello World
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Carlene Lebeuf</title>
+
+	<!-- jQuery min -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+
+	<!-- Bootstrap Components -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	   	<ul class="nav nav-pills pull-right">
+			<li role="presentation" class="active"><a href="#">ABOUT</a></li>
+			<li role="presentation"><a href="#">RESUME</a></li>
+			<li role="presentation"><a href="#">PORTFOLIO</a></li>
+			<li role="presentation"><a href="#">CONTACT ME</a></li>
+		</ul>
+	</nav>
+
+	<div class="jumbotron banner">
+	  <div class="container">
+	  <row>
+		  <div class="col-md-3 col-sm-4">
+	    	<img src="https://pbs.twimg.com/profile_images/595283033508327424/ucAmtwxc.jpg" class="profile"> 
+		  </div>
+		  <div class="col-sm-8">
+		  	<h3>Hello there, I'm . . .</h3>
+		  	<h1>Carlene Lebeuf</h1>
+		  	<h3>a Computer Science Graduate Student at UVic</h3>
+		  </div>
+	  </row>
+	  </div>
+	</div>
+
+
+	<div class="container content">
+
+		My name is Carlene, and I am a software developer.
+		Currently, I’m working on my master's degree at a fun research lab called the <a href="http://thechiselgroup.org/" target="_blank">CHISEL Group</a> (Computer-Human Interaction Software Engineering Lab) at the University of Victoria, Canada.
+
+
+			<br><br>
+
+			I have a passion for human computer interaction, visualization, and interface design.
+
+		<img src="images/HRR.png" class="divider" />
+
+		<h1>RESUME</h1>
+
+		content goes here
+		<br> link to pdf resume
+
+		<img src="images/HRL.png" class="divider" />
+
+		<h1 id="portfolio">PORTFOLIO EXAMPLES</h1>
+		<br>
+
+		<row>
+			<div class="col-sm-8">
+				<img src="images/belocal.png" class="portfolio-image">
+			</div>
+			<div class="col-sm-4 portfolio-text">
+				<h2>beLocal Victoria</h2>
+				<br><b>Role:</b> Development (Front-End)
+				<br><b>Platform(s):</b> Web
+
+				<br><br>Worked with a small team to develop beLocal, a fully functional web application using AngularJS, Django and Twitter Bootstrap.  beLocal Victoria aim is to help foodies connect locals locally sourced food.
+
+				<br><br><a href="http://be-local.ca" target="_blank"><b>View Live at:</b> www.be-local.ca </a>
+			</div>
+		</row>
+
+
+		<img src="images/HRR.png" class="divider" />
+
+		<h1>CONTACT ME</h1>
+
+
+		<row>
+			<div class="col-sm-6 col-sm-push-6 contact-me">
+				<a href="mailto:carlylebeuf@gmail.com">
+					<img src="images/email.png" class="social-icon">carlylebeuf(at)gmail
+				</a>
+				<br><a href="https://twitter.com/CarlyLebeuf" target="_blank">
+					<img src="images/twitter.png" class="social-icon">Twitter: CarlyLebeuf
+				</a>
+				<br><a href="http://ca.linkedin.com/in/clebeuf" target="_blank">
+					<img src="images/linkedin.png" class="social-icon">LinkedIn
+				</a>
+				<br><a href="https://github.com/Clebeuf/" target="_blank">
+					<img src="images/github.png" class="social-icon">Github: Clebeuf
+				</a>
+
+			</div>
+
+			<div class="col-sm-6 col-sm-pull-6 contact-me location">
+				<img src="images/map.png" class="social-icon">I live in Victoria, BC, Canada
+				<div id="map" class="pull-right"></div>
+
+			</div>
+
+		</row>
+
+
+
+	</div>
+
+	<br>
+	<div class="footer">
+		© 2015 Carlene Lebeuf - All rights reserved.
+	<div>
+	<a href="#portfolio">Research &amp; Development </a>
+
+
+	<!-- Stylized map from https://snazzymaps.com -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+        function init() {
+            var mapOptions = {
+                zoom: 11,
+                center: new google.maps.LatLng(48.4415998,-123.3451567),
+                styles: [{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"gamma":"4.47"},{"visibility":"on"},{"hue":"#ff0034"},{"lightness":"-19"},{"saturation":"52"},{"weight":"0.75"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"gamma":"9.44"},{"lightness":"65"},{"saturation":"98"},{"hue":"#00ff0b"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"simplified"},{"hue":"#ffeb00"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"gamma":"5.73"},{"lightness":"-36"},{"saturation":"-32"},{"visibility":"simplified"},{"hue":"#ff003f"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"gamma":"0.76"},{"lightness":"45"},{"saturation":"-52"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"hue":"#67ff00"},{"lightness":"-35"},{"gamma":"4.66"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"saturation":"-80"},{"lightness":"-82"},{"gamma":"5.16"},{"hue":"#00acff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"hue":"#00b2ff"},{"saturation":"-74"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#ff001d"},{"weight":"2.50"},{"lightness":"22"},{"saturation":"85"},{"gamma":"4.91"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"hue":"#ff9b00"},{"visibility":"on"},{"gamma":"6.29"},{"lightness":"-52"},{"saturation":"50"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#00e5ff"},{"saturation":"-89"},{"lightness":"100"},{"gamma":"10.00"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"hue":"#ff9b00"},{"gamma":"8.49"},{"lightness":"-21"},{"weight":"0.50"},{"saturation":"-79"}]},{"featureType":"transit.line","elementType":"geometry.stroke","stylers":[{"color":"#530c0c"},{"visibility":"on"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"hue":"#ff00c3"},{"saturation":"-49"},{"lightness":"7"}]},{"featureType":"water","elementType":"labels","stylers":[{"hue":"#ff3f00"}]}]
+            };
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+
+    </script>
+
+</body>
+
+</html>
