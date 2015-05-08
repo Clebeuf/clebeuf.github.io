@@ -10,6 +10,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 
+	<!-- TYPED JS -->
+	<script src="js/typed.js"></script>
+
 	<link rel="stylesheet" href="CSS/devicon.css">
 
 	<!-- Bootstrap Components -->
@@ -40,27 +43,31 @@
 	<script src="js/d3.layout.cloud.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
 	   	<ul class="nav nav-pills pull-right">
-			<li role="presentation" class="active"><a href="#">ABOUT</a></li>
-			<li role="presentation"><a href="#">SKILLS</a></li>
-			<li role="presentation"><a href="#">PROJECTS</a></li>
-			<li role="presentation"><a href="#">CONTACT ME</a></li>
+			<li role="presentation" class="active"><a href="#about">ABOUT</a></li>
+			<li role="presentation"><a href="#skills">SKILLS</a></li>
+			<li role="presentation"><a href="#projects">PROJECTS</a></li>
+			<li role="presentation"><a href="#contact">CONTACT ME</a></li>
 		</ul>
 	</nav>
 
-	<div class="jumbotron banner">
+	<div class="jumbotron banner" id="about">
 	  <div class="container">
 	  <row>
 		  <div class="col-md-3 col-sm-4">
 	    	<img src="https://pbs.twimg.com/profile_images/595283033508327424/ucAmtwxc.jpg" class="profile"> 
 		  </div>
 		  <div class="col-sm-8">
-		  	<h3>Hello there, I'm . . .</h3>
+		  	<span class="typed-header"></span>
+		  	<br>
+		  	<span class="typed-caption"></span>
+
+		  	<!-- <h3>Hello there, I'm . . .</h3>
 		  	<h1>Carlene Lebeuf</h1>
-		  	<h3>a Computer Science Graduate Student at UVic</h3>
+		  	<h3>a Computer Science Graduate Student at UVic</h3> -->
 
 		  </div>
 	  </row>
@@ -71,46 +78,52 @@
 	<div class="container content">
 
 		<div class="row">
-			My name is Carlene, and I am a software developer.
-			Currently, I’m working on my master's degree at a research lab called the 
+			My name is Carlene Lebeuf, and I am a software developer. I'm passionate about human computer interaction, visualization, and interface design.
+
+			<br><br>
+			In spring 2014, I graduated with distinction from the University of Victoria with a combined Bachelors of Science Degree in Computer Science and Psychology.  Currently, I’m working on my master's degree at a research lab called the 
 			
 			<a href="http://thechiselgroup.org/" target="_blank">CHISEL Group</a> 
 			(Computer-Human Interaction Software Engineering Lab) at the University of Victoria, Canada.
-
-			<br><br>
-
-			I have a passion for human computer interaction, visualization, and interface design.
 
 		</div>
 	</div>
 
 <!-- Skills -->
+	<div id="skills"></div>
+	
 	<div class="title-box">
 		.SKILLS
 	</div>
 
 	<div class="container content">
 		<div class="row">
+			blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, 
+		</div>
+
+		<br><hr>
+
+		<div class="row">
 			<div class="col-sm-6">
 
-				<h2>Programming Languages</h2>
+				<h3>Programming Languages</h3>
 
-				<div class="skillbar clearfix " data-percent="90%">
+				<div class="skillbar clearfix " data-percent="80%">
 					<div class="skillbar-title"><span>Python</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="75%">
+				<div class="skillbar clearfix " data-percent="65%">
 					<div class="skillbar-title"><span>Java</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="50%">
+				<div class="skillbar clearfix " data-percent="40%">
 					<div class="skillbar-title"><span>C</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="50%">
+				<div class="skillbar clearfix " data-percent="40%">
 					<div class="skillbar-title"><span>SQL</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
@@ -118,34 +131,36 @@
 
 			<div class="col-sm-6">
 
-				<h2>Web Development</h2>
+				<h3>Web Development</h3>
 
-				<div class="skillbar clearfix " data-percent="90%">
+				<div class="skillbar clearfix " data-percent="80%">
 					<div class="skillbar-title"><span>HTML</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="85%">
+				<div class="skillbar clearfix " data-percent="75%">
 					<div class="skillbar-title"><span>CSS</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="75%">
+				<div class="skillbar clearfix " data-percent="65%">
 					<div class="skillbar-title"><span>Javascript</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="40%">
+				<div class="skillbar clearfix " data-percent="30%">
 					<div class="skillbar-title"><span>jQuery</span></div>
 					<div class="skillbar-bar"></div>
 				</div>
 
-				<div class="skillbar clearfix " data-percent="60%">
+				<div class="skillbar clearfix " data-percent="50%">
 					<div class="skillbar-title"><span>Photoshop</span></div>
 					<div class="skillbar-bar"></div>
 				</div>		
 			</div>
 		</div>
+
+		<br><hr><br>
 
 		<div class="row">
 
@@ -156,61 +171,171 @@
 	</div>
 
 		<!-- <img src="images/HRL.png" class="divider" /> -->
-
+	<div id="projects"></div>
 	<div class="title-box">
 		.PROJECTS
+	</div>
+
+	<div class="container content">
+
+		<div class="row">
+			blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, 
+		</div>
+
+		<br><hr><br>
+
+		<!-- BELOCAL PROJECT -->
+		<div class="row">
+			<div class="col-sm-8">
+
+					<div id="carousel-example-generic" class="carousel slide portfolio-image" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					 	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="images/laptop.jpg">
+					    </div>
+					    <div class="item">
+					      <img src="images/tablet.jpg" >
+					    </div>
+					    <div class="item">
+					      <img src="images/phone.jpg">
+					    </div>
+						<div class="item">
+						<img src="images/tablet2.jpg" >
+					    </div>
+					  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			</div>
+
+			<div class="col-sm-4 left">
+				<h2>beLocal Victoria</h2>
+				<br><b>Role:</b> Development (Front-End)
+				<br><b>Platform(s):</b> Web
+
+				<br><br>Worked with a small team to develop beLocal Victoria, a fully functional web application using AngularJS, Django and Twitter Bootstrap.  The app aims to connect local farmers with members of the community to help support Victoria's local food scene.
+
+				<br><br><b>View Live at:</b><a href="http://be-local.ca" target="_blank"> www.be-local.ca </a>
+			</div>
+		</div>
+
+
+		<br><hr><br>
+
+		<!-- INFO VIS PROJECT -->
+		<div class="row">
+			<div class="col-sm-8 col-sm-push-4">
+
+					<div id="carousel-infoVis" class="carousel slide portfolio-image" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-infoVis" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-infoVis" data-slide-to="1"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="images/infoVis.jpg">
+					    </div>
+					    <div class="item">
+					      <img src="images/infoVis2.jpg" >
+					    </div>
+					  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-infoVis" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-infoVis" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			</div>
+			<div class="col-sm-4 right col-sm-pull-8">
+				<h2>MOOC Visualization</h2>
+				<br><b>Role:</b> Development
+				<br><b>Platform(s):</b> Web
+
+				<br><br>Worked with a classmate to develop an interactive tool that allows users to explore trends in Massive Open Online Courses (MOOC) enrollment data.  The tool was built using D3.js and Twitter Bootstrap.
+
+				<br><br><b>View Live at:</b> comming soon
+			</div>
+		</div>
+
+		<br><hr><br>
+
+		<div class="row">
+			Looking for more?  Checkout my public projects on <a href="https://github.com/Clebeuf/" target="_blank">Github</a>
+		</div>
+	</div>
+
+
+
+	<div id="contact"></div>
+	<div class="title-box">
+		.CONTACT
 	</div>
 
 
 	<div class="container content">
 
 		<div class="row">
-			<div class="col-sm-8">
-				<a href="https://belocalvictoria.me"><img src="images/belocal.png" class="portfolio-image"></a>
-			</div>
-			<div class="col-sm-4 portfolio-text">
-				<h2>beLocal Victoria</h2>
-				<br><b>Role:</b> Development (Front-End)
-				<br><b>Platform(s):</b> Web
-
-				<br><br>Worked with a small team to develop beLocal, a fully functional web application using AngularJS, Django and Twitter Bootstrap.  beLocal Victoria aim is to help foodies connect locals locally sourced food.
-
-				<br><br><a href="http://be-local.ca" target="_blank"><b>View Live at:</b> www.be-local.ca </a>
-			</div>
+			I would love to hear from you! You can reach at any of the following locations:
 		</div>
-	</div>
 
+		<br>
 
-	<div class="title-box">
-		.CONTACT
-	</div>
-
-
-	<div class="container">
-
-		<div class="row content">
-			<div class="col-sm-6 col-sm-push-6 contact-me">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
 				<a href="mailto:carlylebeuf@gmail.com">
-					<img src="images/email.png" class="social-icon">carlylebeuf(at)gmail
+					<img src="images/email.png" class="social-icon">
+					<br>carlylebeuf<!-- -->@<!-- -->gmail<!-- -->.com
+					<div class="contact">EMAIL</div>
 				</a>
-				<br><a href="https://twitter.com/CarlyLebeuf" target="_blank">
-					<img src="images/twitter.png" class="social-icon">Twitter: CarlyLebeuf
-				</a>
-				<br><a href="http://ca.linkedin.com/in/clebeuf" target="_blank">
-					<img src="images/linkedin.png" class="social-icon">LinkedIn
-				</a>
-				<br><a href="https://github.com/Clebeuf/" target="_blank">
-					<img src="images/github.png" class="social-icon">Github: Clebeuf
-				</a>
-
 			</div>
-
-			<div class="col-sm-6 col-sm-pull-6 contact-me location">
-				<img src="images/map.png" class="social-icon">I live in Victoria, BC, Canada
-				<div id="map" class="pull-right"></div>
-
+			<div class="col-sm-6 col-md-3">
+				<a href="https://twitter.com/CarlyLebeuf" target="_blank">
+					<img src="images/twitter.png" class="social-icon">
+					<br>@CarlyLebeuf
+					<div class="contact">TWITTER</div>
+				</a>
 			</div>
-
+			<div class="col-sm-6 col-md-3">
+				<a href="http://ca.linkedin.com/in/clebeuf" target="_blank">
+					<img src="images/linkedin.png" class="social-icon">
+					<br>Carlene Lebeuf
+					<div class="contact">LINKED IN</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<a href="https://github.com/Clebeuf/" target="_blank">
+					<img src="images/github.png" class="social-icon">
+					<br>Clebeuf
+					<div class="contact">GITHUB</div>
+				</a>
+			</div>
 		</div>
 	</div>
 
@@ -220,24 +345,9 @@
 		© 2015 Carlene Lebeuf - All rights reserved.
 	<div>
 
-	<!-- Stylized map from https://snazzymaps.com -->
-    <script type="text/javascript">
-        google.maps.event.addDomListener(window, 'load', init);
-        function init() {
-            var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(48.4415998,-123.3451567),
-                styles: [{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"gamma":"4.47"},{"visibility":"on"},{"hue":"#ff0034"},{"lightness":"-19"},{"saturation":"52"},{"weight":"0.75"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"gamma":"9.44"},{"lightness":"65"},{"saturation":"98"},{"hue":"#00ff0b"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"simplified"},{"hue":"#ffeb00"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"gamma":"5.73"},{"lightness":"-36"},{"saturation":"-32"},{"visibility":"simplified"},{"hue":"#ff003f"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"gamma":"0.76"},{"lightness":"45"},{"saturation":"-52"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"hue":"#67ff00"},{"lightness":"-35"},{"gamma":"4.66"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"saturation":"-80"},{"lightness":"-82"},{"gamma":"5.16"},{"hue":"#00acff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"hue":"#00b2ff"},{"saturation":"-74"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#ff001d"},{"weight":"2.50"},{"lightness":"22"},{"saturation":"85"},{"gamma":"4.91"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"hue":"#ff9b00"},{"visibility":"on"},{"gamma":"6.29"},{"lightness":"-52"},{"saturation":"50"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#00e5ff"},{"saturation":"-89"},{"lightness":"100"},{"gamma":"10.00"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"hue":"#ff9b00"},{"gamma":"8.49"},{"lightness":"-21"},{"weight":"0.50"},{"saturation":"-79"}]},{"featureType":"transit.line","elementType":"geometry.stroke","stylers":[{"color":"#530c0c"},{"visibility":"on"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"hue":"#ff00c3"},{"saturation":"-49"},{"lightness":"7"}]},{"featureType":"water","elementType":"labels","stylers":[{"hue":"#ff3f00"}]}]
-            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-
-    </script>
-
 
 	<script>
-
+		// exerience sliders
 		jQuery(document).ready(function(){
 			jQuery('.skillbar').each(function(){
 				jQuery(this).find('.skillbar-bar').animate({
@@ -245,6 +355,43 @@
 				},6000);
 			});
 		});
+
+		//scrollspy
+		$('body').scrollspy({ target: '#navbar-example' })
+		$('[data-spy="scroll"]').each(function () {
+		  var $spy = $(this).scrollspy('refresh')
+		})	
+
+		//carousel control
+		$('.carousel').carousel({
+		  interval: 15000
+		})	
+
+
+		//typed
+		$(function(){
+	      $(".typed-header").typed({
+	        strings: [
+	        "Hello, world!<h1>I'm Carlene Lebeuf</h1>a Software Developer",
+	        "Hello, world!<h1>I'm Carlene Lebeuf</h1>a Computer Scientist! ",
+	        "Hello, world!<h1>I'm Carlene Lebeuf</h1>a Graduate Student at UVic  ^1000:) "],
+	        typeSpeed: 40,
+	        contentType: 'html'
+	      });
+	  });
+
+	</script>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62782126-1', 'auto');
+	  ga('send', 'pageview');
+
 	</script>
 </body>
 </html>
