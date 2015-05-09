@@ -356,6 +356,12 @@
 			});
 		});
 
+
+		$( "div.skillbar" ).hover(
+			function() {$( this ).fadeTo("fast", 1);},
+			function() {$( this ).fadeTo("fast", .85);}
+		);
+
 		//scrollspy
 		$('body').scrollspy({ target: '#navbar-example' })
 		$('[data-spy="scroll"]').each(function () {

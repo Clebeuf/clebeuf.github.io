@@ -168,6 +168,7 @@ body {
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
+	opacity: .85;
 }
 
 .skillbar-title {
