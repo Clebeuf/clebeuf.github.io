@@ -39,3 +39,16 @@ $(function(){
     contentType: 'html'
   });
 });
+
+
+//Stack menu when collapsed & remove pills
+$('#navbar-example').on('show.bs.collapse', function() {
+    $('.nav').addClass('nav-stacked').removeClass('nav-pills');
+    console.log("hello there")
+});
+
+//Unstack menu when not collapsed & add back pills
+$('#navbar-example').on('hidden.bs.collapse', function() {
+    $('.nav').removeClass('nav-stacked').addClass('nav-pills');
+});
+

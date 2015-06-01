@@ -31,22 +31,32 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-	<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
-	   	<ul class="nav nav-pills pull-right">
-			<li role="presentation" class="active"><a href="#about">ABOUT</a></li>
-			<li role="presentation"><a href="#skills">SKILLS</a></li>
-			<li role="presentation"><a href="#projects">PROJECTS</a></li>
-			<li role="presentation"><a href="#contact">CONTACT ME</a></li>
-		</ul>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<a class="navbar-brand" href="#">Carlene Lebeuf</a>
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+		<div class="collapse navbar-collapse" data-toggle="collapse" id="navbar-example" onClick="event.stopPropagation();">
+		   	<ul class="nav nav-pills pull-right">
+				<li role="presentation" class="active"><a href="#about">ABOUT</a></li>
+				<li role="presentation"><a href="#skills">SKILLS</a></li>
+				<li role="presentation"><a href="#projects">PROJECTS</a></li>
+				<li role="presentation"><a href="#contact">CONTACT ME</a></li>
+			</ul>
+		</div>
 	</nav>
 
 	<div class="jumbotron banner" id="about">
-	  <div class="container">
+	  <div class="container-fluid">
 	  <row>
-		  <div class="col-md-3 col-sm-4">
+		  <div class="col-md-3 col-sm-3">
 	    	<img src="https://pbs.twimg.com/profile_images/595283033508327424/ucAmtwxc.jpg" class="profile"> 
 		  </div>
-		  <div class="col-sm-8">
+		  <div class="col-sm-9 typed">
 		  	<span class="typed-header"></span>
 		  </div>
 	  </row>
@@ -285,28 +295,28 @@
 		<br>
 
 		<div class="row">
-			<div class="col-sm-6 col-md-3">
-				<a href="mailto:carlylebeuf@gmail.com">
+			<div class="col-md-3 col-xs-6">
+				<a href="mailto:clebeuf@uvic.ca">
 					<img src="images/email.png" class="social-icon">
-					<br>carlylebeuf<!-- -->@<!-- -->gmail<!-- -->.com
+					<br>clebeuf<!-- -->@<!-- -->uvic<!-- -->.ca
 					<div class="contact">EMAIL</div>
 				</a>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<a href="https://twitter.com/CarlyLebeuf" target="_blank">
 					<img src="images/twitter.png" class="social-icon">
 					<br>@CarlyLebeuf
 					<div class="contact">TWITTER</div>
 				</a>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<a href="http://ca.linkedin.com/in/clebeuf" target="_blank">
 					<img src="images/linkedin.png" class="social-icon">
 					<br>Carlene Lebeuf
 					<div class="contact">LINKED IN</div>
 				</a>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<a href="https://github.com/Clebeuf/" target="_blank">
 					<img src="images/github.png" class="social-icon">
 					<br>Clebeuf
