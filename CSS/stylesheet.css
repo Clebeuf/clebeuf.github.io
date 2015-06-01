@@ -107,7 +107,7 @@ COLOURS:
 }
 
 .navbar {
-	padding: 5px;
+	padding: 5px 10px 5px 10px;
 	font-family: 'Special Elite', cursive;
 	font-size: 15px;
 	text-align: center;
