@@ -52,12 +52,13 @@ $('#navbar-example').on('hidden.bs.collapse', function() {
     $('.nav').removeClass('nav-stacked').addClass('nav-pills');
 });
 
-
 // animated scroll from http://jsfiddle.net/9SDLw/
 $('a').click(function(){
+
+    $('#navbar-example').collapse('hide');
+
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top-10
     }, 1000);
     return false;
 });
-
