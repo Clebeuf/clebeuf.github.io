@@ -15,20 +15,13 @@ jQuery(document).ready(function(){
 });
 
 
-//scrollspy
-$('body').scrollspy({ target: '#navbar-example' })
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})	
-
-
 //carousel control
 $('.carousel').carousel({
   interval: 15000
 })	
 
 
-//typed
+//typed component in the jumbotron -- https://github.com/mattboldt/typed.js/
 $(function(){
   $(".typed-header").typed({
     strings: [
@@ -53,10 +46,12 @@ $('#navbar-example').on('hidden.bs.collapse', function() {
 });
 
 // animated scroll from http://jsfiddle.net/9SDLw/
-$('a').click(function(){
+$('#navbar-fixed a').click(function(){
 
+    // collapse the burger menu
     $('#navbar-example').collapse('hide');
 
+    // animate the scroll to the menu item
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top-10
     }, 1000);
