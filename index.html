@@ -27,8 +27,9 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-	<nav class="navbar navbar-fixed-top" id="navbar-fixed" >
-		<a class="navbar-brand" href="#">Carlene Lebeuf</a>
+	<nav class="navbar" id="navbar-fixed" >
+		<a class="navbar-brand" href="#">CL</a>
+		
 		<div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
 	        <span class="icon-bar"></span>
@@ -36,12 +37,21 @@
 	        <span class="icon-bar"></span>                        
 	      </button>
 	    </div>
-		<div class="collapse navbar-collapse" data-toggle="collapse" id="navbar-example" onClick="event.stopPropagation();">
-		   	<ul class="nav nav-pills pull-right">
+		
+		<div class="collapse navbar-collapse navbar-header" data-toggle="collapse" id="navbar-example" onClick="event.stopPropagation();">
+		   	<ul class="nav navbar-nav">
 				<li class="active"><a href="#about">ABOUT</a></li>
 				<li ><a href="#skills">SKILLS</a></li>
 				<li ><a href="#project">PROJECTS</a></li>
-				<li data-toggle="collapse" data-target="#navbar-example"><a href="#contact">CONTACT ME</a></li>
+				<li ><a href="#contact">CONTACT ME</a></li>
+			</ul>
+		</div>
+
+		<div class="collapse navbar-collapse navbar-header pull-right" data-toggle="collapse" id="navbar-example">
+		   	<ul class="nav navbar-nav">
+				<li ><a href="http://ca.linkedin.com/in/clebeuf" target="_blank" class="external nav"><i class="fa fa-linkedin fa-lg"></i></a></li>
+				<li ><a href="https://twitter.com/CarlyLebeuf" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+				<li ><a href="https://github.com/Clebeuf/" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
 			</ul>
 		</div>
 	</nav>
@@ -53,14 +63,11 @@
 
 	<div class="foreground-box" id="about">
 		<div class="container">
-			<p>My name is Carlene Lebeuf, and I am an aspiring front end developer.  In spring 2014, I graduated with distinction from the University of Victoria, Canada, with a combined Bachelor's of Science Degree in Computer Science and Psychology.  Currently, I’m working on my master's degree in a research lab called the <a href="http://thechiselgroup.org/" target="_blank">CHISEL Group</a> (Computer-Human Interaction Software Engineering Lab), at the University of Victoria.</p>
+			<p>Hi, I'm Carlene Lebeuf, a graduate student and researcher at the University of Victoria, British Columbia. In spring 2014, I graduated with distinction from the University of Victoria, Canada, with a combined Bachelor's of Science Degree in Computer Science and Psychology.  Currently, I'm working on my Master's of Computer Science with the <a href="http://thechiselgroup.org/" target="_blank">CHISEL (Computer-Human Interaction Software Engineering Lab) Group</a>.</p>
 
-			<p>Bacon ipsum dolor amet biltong shankle short ribs porchetta, drumstick andouille short loin brisket pork filet mignon pork belly sausage chuck jerky. Turducken sausage strip steak flank venison meatloaf porchetta. Landjaeger porchetta pork loin beef ribs, sirloin tongue kielbasa meatball. Turkey kevin kielbasa, beef ribs venison andouille tenderloin ribeye biltong sirloin leberkas doner. Frankfurter kevin pork landjaeger turducken.</p>
+			<p>Coming from a interdisciplinary background, jump at any opportunity to explore human aspects of software development.  I am passionate about software development and design, with a focus on web application development. My current research aims to explore the possible applications of conversation in data exploration and visualization interfaces.</p>
 
-			<p>Shoulder strip steak pork belly venison turkey jerky filet mignon tri-tip sausage chuck alcatra landjaeger tail. Corned beef jowl alcatra flank fatback, bresaola pig prosciutto. Jowl fatback kielbasa jerky. Kevin bresaola short ribs drumstick ball tip pancetta. Hamburger cow doner, corned beef ribeye shankle tongue boudin t-bone landjaeger ground round ball tip shoulder beef. Bresaola corned beef ham ribeye turducken salami tenderloin jowl boudin alcatra pork loin prosciutto bacon turkey picanha. Beef leberkas pork belly sausage, filet mignon sirloin doner boudin porchetta prosciutto corned beef bresaola pork chop strip steak drumstick.</p>
-
-			<p>Pancetta ham hock pork loin prosciutto, meatloaf pork belly porchetta tenderloin t-bone short loin jowl ball tip salami cow flank. Shoulder pig short loin cow, ham hock prosciutto pastrami sirloin beef. Hamburger pork belly prosciutto salami pancetta beef ribs. Andouille short loin boudin strip steak, shank pastrami landjaeger doner ball tip spare ribs filet mignon flank pork chicken pig. Ground round bacon venison meatball beef ribs, andouille kielbasa kevin.</p>
-
+			<p>When I'm not slinging code, you can usually find me enjoying the </p>
 		</div>
 	</div>
 
@@ -73,65 +80,46 @@
 	<div class="foreground-box">
 		<div class="container">
 			<p>
-			 	As a both a graduate of a combined computer science and psychology undergrad program and as a current Master's student in computer science, I have a wide range of skills: front end development, object oriented programming, and back end development. 
+			 	As a both a graduate of a combined computer science and psychology undergrad program and as a current Master's student in computer science, I've had the chance to develop a wide range of skills.
 			 </p>
 			 <hr>
 
 		<div class="row">
-			<div class="col-sm-6">
-
-				<h3>Programming Languages</h3>
-
-				<div class="skillbar clearfix " data-percent="80%">
-					<div class="skillbar-title"><span>Python</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="65%">
-					<div class="skillbar-title"><span>Java</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="40%">
-					<div class="skillbar-title"><span>C</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="40%">
-					<div class="skillbar-title"><span>SQL</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-			</div>
-
-			<div class="col-sm-6">
-
+			
+			<div class="col-sm-4">
 				<h3>Web Development</h3>
-
-				<div class="skillbar clearfix " data-percent="80%">
-					<div class="skillbar-title"><span>HTML</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="75%">
-					<div class="skillbar-title"><span>CSS</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="65%">
-					<div class="skillbar-title"><span>Javascript</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="30%">
-					<div class="skillbar-title"><span>jQuery</span></div>
-					<div class="skillbar-bar"></div>
-				</div>
-
-				<div class="skillbar clearfix " data-percent="50%">
-					<div class="skillbar-title"><span>Photoshop</span></div>
-					<div class="skillbar-bar"></div>
-				</div>		
+				<ul>
+					<li>HTML</li>
+					<li>CSS / LESS / SASS</li>
+					<li>JavaScript</li>
+					<li>Angular</li>
+					<li>React</li>
+					<li>jQuery</li>
+				</ul>
 			</div>
+
+			<div class="col-sm-4">
+				<h3>Design / UX</h3>
+				<ul>
+					<li>Photoshop / Sketch</li>
+					<li>Wireframming</li>
+					<li>Mockups</li>
+					<li>Prototyping</li>
+					<li>User Testing</li>
+					<li>Storyboarding</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<h3>Other Languages</h3>
+				<ul>
+					<li>Python</li>
+					<li>Java</li>
+					<li>C</li>
+					<li>SQL / noSQL</li>
+				</ul>
+			</div>
+
 		</div>
 
 		<hr>
@@ -156,14 +144,12 @@
 
 	<div class="foreground-box">
 		<div class="container">
-			<p>
-				Throughout my degrees, I've had the opportunity to work on a wide range of projects.  Below are some of my favourite projects from the past few year.  Please see my <a href="https://github.com/Clebeuf/" target="_blank">github account</a> for a more comprehensive look at what I've been working on.
-			</p>
+			<p>Throughout my schooling and work, I've had the opportunity to work on a wide range of projects.  Below you'll find some of my favourite projects.  Please see my <a href="https://github.com/Clebeuf/" target="_blank">github account</a> for a more comprehensive look at what I've been working on lately.</p>
 			<hr>
 
-		<!-- BELOCAL PROJECT -->
-		<div class="row">
-			<div class="col-md-8">
+			<!-- BELOCAL PROJECT -->
+			<div class="row">
+				<div class="col-md-8">
 
 					<div id="carousel-example-generic" class="carousel slide portfolio-image" data-ride="carousel">
 					  <!-- Indicators -->
@@ -210,7 +196,10 @@
 
 				<br><br>Worked with a small team to develop beLocal Victoria, a fully functional web application using AngularJS, Django and Twitter Bootstrap.  The app aims to connect local farmers with members of the community to help support Victoria's local food scene.
 
-				<br><br><b>View Live at:</b><a href="http://belocalvictoria.me" target="_blank"> beLocalVictoria.me </a>
+				<br><br>
+				<b>Demo: </b>
+				<a href="https://www.youtube.com/watch?v=iYBiNoU0lhY" target="_blank"> Vendor Tutorial</a>,
+				<a href="https://www.youtube.com/watch?v=iIXlXW9vQF8" target="_blank"> Foodie Tutorial</a>
 			</div>
 		</div>
 
@@ -256,14 +245,12 @@
 				<br><b>Platform(s):</b> Web
 
 				<br><br>Worked with a classmate to develop an interactive tool that allows users to explore trends in Massive Open Online Courses (MOOC) enrollment data.  The tool was built using D3.js and Twitter Bootstrap.
-
-				<br><br><b>View Live at:</b> comming soon
 			</div>
 		</div>
 
 		<br><hr><br>
 
-		<div class="row">
+		<div class="row text-center">
 			<p>
 				Looking for more?  Checkout my
 				<a href="https://github.com/Clebeuf/" target="_blank"> public projects on Github</a>
@@ -283,12 +270,13 @@
 	<div class="foreground-box">
 		<div class="container text-center">
 
-		<p class="animated bounce">I'd love to hear from you! You can reach at any of the following locations:</p>
+		<p>I'd love to hear from you! You can reach at any of the following locations:</p>
 
 		<br>
 
 		<div class="row">
 			<div class="col-xs-6">
+				<br>
 				<a href="mailto:clebeuf@uvic.ca">
 					<i class="fa fa-envelope-o fa-2x"></i>
 					<br>clebeuf<!-- -->@<!-- -->uvic<!-- -->.ca
@@ -296,6 +284,7 @@
 				</a>
 			</div>
 			<div class="col-xs-6">
+				<br>
 				<a href="https://twitter.com/CarlyLebeuf" target="_blank">
 					<i class="fa fa-twitter fa-2x"></i>
 					<br>@CarlyLebeuf
@@ -303,6 +292,7 @@
 				</a>
 			</div>
 			<div class="col-xs-6">
+				<br>
 				<a href="http://ca.linkedin.com/in/clebeuf" target="_blank">
 					<i class="fa fa-linkedin fa-2x"></i>
 					<br>Carlene Lebeuf
@@ -310,6 +300,7 @@
 				</a>
 			</div>
 			<div class="col-xs-6">
+				<br>
 				<a href="https://github.com/Clebeuf/" target="_blank">
 					<i class="fa fa-github fa-2x"></i>
 					<br>Clebeuf
@@ -320,39 +311,15 @@
 	</div>
 </div>
 
-	<div class="footer">
-		© 2015 Carlene Lebeuf - All rights reserved.
-		<br>
-		Built with <a href="http://www.w3.org/html/logo/" target="_blank">HTML5</a>, 
-		<a href="http://dev.w3.org/csswg/css-syntax-3/" target="_blank">CSS3</a>, 
-		<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>, 
-		and <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a>.
-	<div>
+<div class="footer">
+	© 2015 Carlene Lebeuf - All rights reserved.
+	<br>
+	Built with <a href="http://www.w3.org/html/logo/" target="_blank">HTML5</a>,
+	<a href="http://dev.w3.org/csswg/css-syntax-3/" target="_blank">CSS3</a>,
+	<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>,
+	and <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a>.
+<div>
 
-
-
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Thanks for stopping by!</h4>
-      </div>
-      <div class="modal-body">
-        <p>The bad news... my website is currently under constructions.</p>
-        <p>But feel free to poke around in the meantime (please ignore the bacon ipsum).  As always, you can contact me at clebeuf@uvic.ca.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 	<!-- include custom js script -->
 	<script src="js/custom.js"></script>
