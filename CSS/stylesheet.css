@@ -3,12 +3,76 @@ COLOURS:
 	Light Green: #ADE3C2;
 	Dark Green: #6D987D;
 	Dark Grey Font: #333333;
-
-
+	#cacaca
 */
 
+body {
+	background-color: #ff5722 !important;
+	font-size: 20px !important;
+	font-weight: 200 !important;
+	background-attachment: fixed;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.hero {
+	min-height: 100vh;
+	color: #fff !important;
+	z-index: 5000;
+}
+
+#site-title {
+	padding-top: 10px;
+	position: fixed;
+	display: inline-block;
+	font-size: 4em;
+}
+
+#site-links {
+	padding-top: 10px;
+	position: fixed;
+	display: inline-block;
+	font-size: 1em;
+}
+
+#site-links a {
+	color: #cacaca !important;
+	transition: color .5s ease;
+}
+
+.fixed-navbar {
+	background-color: #ff5722;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	z-index: 5000;
+	color: #fff !important;
+}
+
+.fixed-navbar #site-links a {
+	color: #fff !important;
+}
+
+.carousel-inner{
+  width:100%;
+  height: 800px !important;
+  max-height: 40vw !important;
+}
+
+#v0{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
+}
+
+.margin-sm { margin: 5px; }
+
 .zoom-text {
-	font-size: 5em !important;
+	font-size: 4em !important;
 }
 
 .foreground-box {
@@ -19,62 +83,12 @@ COLOURS:
 	z-index: 2000;
 }
 
-#about {
-	margin-top: 100vh;
-}
-
-.jh {
-	font-size: 1.5em !important;
-	font-weight: 200;
-}
-
-.typed-content {
-	position: fixed;
-	font-size: 2.5em;
-	top: 30vh;
-	left: 10vw;
-	color: #fff !important;
-	font-weight: 100;
-	z-index: 1 !important;
-}
-
-body {
-	background-image: url("../images/background.jpg") !important;
-	background-size: cover;
-	background-color: #000;
-	font-weight: 200;
-	font-size: 20px !important;
-	background-attachment: fixed;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-}
-
-p {
-	font-size: 1em;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;back
-}
-
-nav {
-	opacity: .95;
-	height: auto;
-	background-color: #171717 !important;
-	font-size: .7em !important;
-	height: auto;
-}
-
-.navbar-brand {
-	color: #fff !important;
-	font-weight: 100;
-	padding: 25px !important;
-	font-size: 20px !important;
+.foreground-box p {
+	text-align: center;
 }
 
 li > a {
 	color: #fff !important;
-	padding-top: 25px !important;
-	padding-bottom: 25px !important;
-	font-size: 20px;
-	font-weight: 100;
 	-webkit-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
 
@@ -82,7 +96,6 @@ li > a {
 
 li > a:hover, li.active > a {
 	opacity: .6;
-	background-color: transparent !important;
 	text-decoration: none;
 
 }
@@ -92,14 +105,6 @@ li > a:hover, li.active > a {
 	margin-bottom: 30px;
 	height: 100px;
 	width: 100%;
-}
-
-.social-icon {
-	width: 70px;
-}
-
-.contact {
-	color: #6D987D
 }
 
 .footer {
@@ -121,21 +126,6 @@ a:hover {
 	opacity: .7;
 }
 
-.title-box {
-	background: transparent;
-	color: #FFF;
-	text-align: center;
-	padding-top: 15vh;
-	font-size: 3.5em;
-	font-weight: 100;
-	opacity: 0.7;
-
-	-webkit-transition: color 2s, opacity 2s, font-size 2s;
-       -moz-transition: color 2s, opacity 2s, font-size 2s;
-         -o-transition: color 2s, opacity 2s, font-size 2s;
-            transition: color 2s, opacity 2s, font-size 2s;
-}
-
 .visible {
 	opacity: 1;
 	font-size: 2em;
@@ -145,10 +135,6 @@ a:hover {
     body {
     	font-size: 12px !important;
     }
-
-    .typed-content {
-		font-size: 2em !important;
-	}
 }
 
 
@@ -158,7 +144,6 @@ a:hover {
 /* ------------------------------------------ */
 
 .background-section {
-  height: 50vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -168,106 +153,29 @@ a:hover {
   background-size: cover;
 }
 
+.title-box {
+	background: transparent;
+	color: #FFF;
+	text-align: center;
+	font-size: 3.5em;
+	font-weight: 100;
+	opacity: 0.7;
+
+	-webkit-transition: color 2s, opacity 2s, font-size 2s;
+       -moz-transition: color 2s, opacity 2s, font-size 2s;
+         -o-transition: color 2s, opacity 2s, font-size 2s;
+            transition: color 2s, opacity 2s, font-size 2s;
+}
 .bg-skill {
-	background-image: url("../images/background3.jpg");
-	background-size: cover;
+	/*background-image: url("../images/bg1.jpg");*/
+	background-size: repeat;
 }
 .bg-project {
-	background-image: url("../images/background4.jpeg");
+	/*background-image: url("../images/bg2.jpg");*/
 	background-size: cover;
 }
 .bg-contact{
-	background-image: url("../images/background2.jpg");
+	/*background-image: url("../images/bg3.jpg");*/
 	background-size: cover;
 }
-
-
-/* TYPED STYLES -- http://www.mattboldt.com/demos/typed-js */
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@ \-keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-/* Adapted from http://w3lessons.info/2013/06/04/skill-bar-with-jquery-css3/ */
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-	opacity: .85;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-	width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#6adcfa;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:4px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	-webkit-border-top-left-radius:0;
-	-webkit-border-bottom-left-radius:0;
-	-moz-border-radius-topleft:0;
-	-moz-border-radius-bottomleft:0;
-	border-top-left-radius:0;
-	border-bottom-left-radius:0;
-	background: #98b6a4;
-}
-
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	border-radius:0;
-	-moz-border-radius:0;
-	-webkit-border-radius:0;
-	background: #b6cbbe;
-}
-
 
