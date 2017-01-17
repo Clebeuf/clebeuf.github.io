@@ -72,7 +72,8 @@ hr {
 }
 
 #site-links a {
-	color: #cacaca !important;
+	color: #ddd !important;
+	font-weight: 200 !important;
 	transition: color .5s ease;
 }
 
@@ -198,8 +199,8 @@ a:hover {
 */
 .foreground-box {
 	width: 100wv;
-	padding-top: 50px;
-	padding-bottom: 10%;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	background-color: #ffffff !important;
 	z-index: 2000;
 	border-top: 1px solid #CCC;
