@@ -1,8 +1,19 @@
+setTimeout(function(){ $("#site-title").css("opacity", 1); }, 0);
+setTimeout(function(){ $("#site-links").css("opacity", 1); }, 500);
+
+
 var siteTitleFontSize = parseInt($("#site-title").css("font-size"));
 var siteLinksFontSize = parseInt($("#site-links").css("font-size"));
 
 var navFontSize = 20;
 var pageMargin = ($(window).width() - parseInt($(".container").css("width")))/2;
+
+var startingTitleWidth = $("#site-title").width();
+var startingTitleHeight = $("#site-title").height();
+var startingLinksWidth = $("#site-links").width();
+var startingLinksHeight = $("#site-links").height();
+var startingOpacity = $(".hero").css("opacity");
+
 
 function setNavbar() {
     var height = $(window).height();
@@ -10,14 +21,14 @@ function setNavbar() {
     var scrollTop = window.pageYOffset;
 
     // title offsets
-    var titleOffsetLeft = (width/2)-( $("#site-title").width()/2 );
-    var titleOffsetTop = (height/2)-( $("#site-title").height()/2 );
+    var titleOffsetLeft = (width - $("#site-title").width())/2;
+    var titleOffsetTop = (height - $("#site-title").height())/2 ;
     var speedTitleLeft = (titleOffsetLeft / height);
     var speedShrinkTitle = parseInt(siteTitleFontSize) / height;
 
     // links offsets
-    var linksOffsetRight = (width/2)-( $("#site-links").width()/2 );
-    var linksOffsetTop = (height/2)-( $("#site-links").height()/2 ) + $("#site-title").height()/2;
+    var linksOffsetRight = (width - $("#site-links").width())/2 ;
+    var linksOffsetTop = (height - $("#site-links").height())/2 + $("#site-title").height()/2;
     var speedLinksRight = (linksOffsetRight / (height));
     var speedShrinkLinks = parseInt(siteLinksFontSize) / height;
     
@@ -25,21 +36,20 @@ function setNavbar() {
     $("#site-title").toggleClass('navbar-header', scrollTop >= height - 75);
     $("#site-links").toggleClass('navbar-header', scrollTop >= height - 75);
 
-
-    
-    // fix to use default sizes for width / height of text
+    // if at top of page use defaults to calculate position
     if (scrollTop <= 0) {
-        console.log("0")
-        $("#site-title").css("left", titleOffsetLeft.toString() + "px");
-        $("#site-title").css("top", titleOffsetTop.toString() + "px");
+        $("#site-title").css("left", ((width-startingTitleWidth)/2).toString() + "px");
+        $("#site-title").css("top", ((height - startingTitleHeight)/2 ).toString() + "px");
         $("#site-title").css("font-size", siteTitleFontSize.toString() + "px" )
 
-        $("#site-links").css("right", linksOffsetRight.toString() + "px");
-        $("#site-links").css("top", linksOffsetTop.toString() + "px");
+        $("#site-links").css("right", ((width-startingLinksWidth)/2).toString() + "px");
+        $("#site-links").css("top", ( (height - startingLinksHeight + startingTitleHeight)/2 ).toString() + "px");
         $("#site-links").css("font-size", siteLinksFontSize.toString() + "px" )
 
+        $(".hero").css("opacity", startingOpacity);
+    
+    // or else calculate position
     } else {
-        console.log("hit")
         // title calculate left offset
         if (titleOffsetLeft-(scrollTop*speedTitleLeft) > pageMargin) {
             $("#site-title").css("left", (titleOffsetLeft-(scrollTop*speedTitleLeft)).toString() + "px");
@@ -70,6 +80,8 @@ function setNavbar() {
         if ((siteLinksFontSize - scrollTop*speedShrinkLinks) > navFontSize) {
             $("#site-links").css("font-size", (siteLinksFontSize - scrollTop*speedShrinkLinks).toString() + "px" )
         } else { $("#site-links").css("font-size", navFontSize.toString() + "px" )}
+
+        $(".hero").css("opacity", ( parseFloat(startingOpacity) +  ((1- startingOpacity)/height)*scrollTop ));
 
     }
 };
